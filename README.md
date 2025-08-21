@@ -28,13 +28,6 @@ git clone https://github.com/yourusername/owncloud-on-ubuntu.git
 
 ---
 
-## 📷 Screenshots
-![OwnCloud Dashboard](./screenshots/dashboard.png)
-![kitpro1 Virtual Host](./screenshots/kitpro1.png)
-![kitpro2 Virtual Host](./screenshots/kitpro2.png)
-
----
-
 ## 💡 Why this project?
 I built this project to showcase:
 - Linux system administration
