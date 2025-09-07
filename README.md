@@ -1,36 +1,29 @@
-# ☁️ OwnCloud on Ubuntu 24.04 LTS
+# ☁️ OwnCloud on Raspberry PI OS Lite
 
-This project demonstrates how to deploy **OwnCloud**, a self-hosted cloud storage solution, on Ubuntu 24.04.3 LTS using the LAMP stack (Linux, Apache, MariaDB, PHP).  
-
-It also includes test virtual hosts (`kitpro1` and `kitpro2`) to verify Apache configurations with simple HTML pages.  
+This project demonstrates how to deploy **OwnCloud**, a self-hosted cloud storage solution, on Raspberry PI OS Lite using the LAMP stack (Linux, Apache, MariaDB, PHP).  
 
 ---
 
 ## 📌 Features
 - Secure, self-hosted cloud storage
 - Apache + MariaDB + PHP (LAMP stack)
-- Virtual hosts with test HTML pages
 - Step-by-step guide for reproducibility
 
 ## 🛠️ Technologies
-- Ubuntu 24.04 LTS
+- Paspberry PI OS Lite (2025-05-13)
 - Apache2
 - MariaDB
-- PHP 7.4 / 8.x (depending on compatibility)
+- PHP 7.4
 - OwnCloud
 
 ## 📖 Setup Instructions
 Clone this repo and follow the [full guide](./GUIDE.md).
 
 ```bash
-git clone https://github.com/yourusername/owncloud-on-ubuntu.git
+git clone https://github.com/nnside/owncloud-on-raspbian.git
 ```
 
 ---
 
 ## 💡 Why this project?
-I built this project to showcase:
-- Linux system administration
-- Web server configuration
-- Deploying secure cloud solutions
-- Working with Apache virtual hosts
+- It's a fork
