@@ -9,10 +9,10 @@ This guide walks you through installing and configuring **OwnCloud** on **Ubuntu
 Clone and run a setup script to install Apache, MySQL, and PHP:  
 
 ```bash
-git clone https://github.com/keepittechie/Linux-Server-Arsenal.git
-cd Linux-Server-Arsenal/assets/
-chmod +x lamp.sh       # Make the script executable
-sudo ./lamp.sh         # Run the script as root to install Apache, MySQL, and PHP
+sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php    # Adding the DEB.SURY.ORG repository for PHP 7/4 installation
+sudo apt update
+sudo apt install apache2 mariadb-server libapache2-mod-php7.4    # Installing Apache2? MariaDB and dependencies
+sudo apt install php7.4-gd php7.4-json php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl php7.4-mcrypt php-imagick php7.4-xml php7.4-zip    # Installing PHP 7.4 and modules
 ```
 
 Verify services are running:  
@@ -88,7 +88,8 @@ Paste this configuration:
 Enable the new site and restart Apache:  
 
 ```bash
-sudo a2ensite owncloud.conf     # Enable the OwnCloud site
+sudo a2ensite owncloud.conf    # Enable the OwnCloud site
+sudo a2enmod env rewrite dir mime headers setenvif ssl    # Rewriting environment
 sudo systemctl restart apache2.service   # Restart Apache to apply changes
 ```
 
@@ -113,15 +114,6 @@ http://<your_ip_address>/owncloud
 Follow the setup wizard:  
 - Create an **admin account**  
 - Enter the database details (`owncloud_db`, `ownclouduser`, `Password`)  
-
----
-
-## ⚠️ PHP Compatibility Note
-
-At the time of writing, **OwnCloud does not support the latest PHP versions** that come with Ubuntu 24.04.  
-
-If you see errors, install **PHP 7.4** following this guide:  
-👉 [How to Install PHP on Ubuntu 24.04](https://tecadmin.net/how-to-install-php-on-ubuntu-24-04/#google_vignette)  
 
 ---
 
