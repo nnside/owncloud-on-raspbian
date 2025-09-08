@@ -25,5 +25,5 @@ git clone https://github.com/nnside/owncloud-on-raspbian.git
 
 ---
 
-## 💡 Why this project?
-- It's a fork
+## 💡 Installing Home Assistant Supervised on Raspberry PI 5 Raspbian
+https://github.com/HuckleberryLovesYou/Homeassistant-Supervised-on-Raspberry-Pi-5
