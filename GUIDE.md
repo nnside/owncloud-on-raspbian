@@ -9,6 +9,8 @@ This guide walks you through installing and configuring **OwnCloud** on **Ubuntu
 Clone and run a setup script to install Apache, MySQL, and PHP:  
 
 ```bash
+sudo apt update
+sudo apt install software-properties-common
 sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php    # Adding the DEB.SURY.ORG repository for PHP 7/4 installation
 sudo apt update
 sudo apt install apache2 mariadb-server libapache2-mod-php7.4    # Installing Apache2? MariaDB and dependencies
