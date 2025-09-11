@@ -6,13 +6,17 @@ This guide walks you through installing and configuring **OwnCloud** on **Ubuntu
 
 ## 1️⃣ Install the LAMP Stack
 
-Clone and run a setup script to install Apache, MySQL, and PHP:  
+Adding propriate PPA to system:  
 
 ```bash
 sudo apt update
 sudo apt install software-properties-common
 sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php    # Adding the DEB.SURY.ORG repository for PHP 7/4 installation
 sudo apt update
+```
+Installing services^
+
+```bash
 sudo apt install apache2 mariadb-server libapache2-mod-php7.4    # Installing Apache2? MariaDB and dependencies
 sudo apt install php7.4-gd php7.4-json php7.4-mysql php7.4-curl php7.4-mbstring php7.4-intl php7.4-mcrypt php-imagick php7.4-xml php7.4-zip    # Installing PHP 7.4 and modules
 ```
