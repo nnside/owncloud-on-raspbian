@@ -9,9 +9,7 @@ This guide walks you through installing and configuring **OwnCloud** on **Ubuntu
 Adding propriate PPA to system:  
 
 ```bash
-sudo apt update
-sudo apt install software-properties-common
-sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php    # Adding the DEB.SURY.ORG repository for PHP 7/4 installation
+curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
 sudo apt update
 ```
 Installing services^
