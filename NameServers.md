@@ -1,40 +1,40 @@
 # Adding custom DNS servers
 ## Installing **resolvconf**
-```bash
+``` bash
 sudo apt update
 sudo apt install resolvconf
 ```
 Testing work of **resolvconf**
-```bash
+``` bash
 sudo systemctl status resolvconf.service
 ```
 If not running
-```bash
+``` bash
 sudo systemctl start resolvconf.service
 ```
-```bash
+``` bash
 sudo systemctl enable resolvconf.service
 ```
-```bash
+``` bash
 sudo systemctl status resolvconf.service
 ```
 ## Adding your name servers
-```bash
+``` bash
 sudo nano /etc/resolvconf/resolv.conf.d/head
 ```
-```nano
-nameserver 77.78.8.8
+``` nano
+nameserver 77.88.8.8
 nameserver 8.8.8.8
 ```
 Restarting
-```bash
+``` bash
 sudo reboot
 ```
-Checking service running
-```bash
+## Checking service running
+``` bash
 sudo systemctl status resolvconf.service
 ```
 Checking name servers
-```bash
+``` bash
 cat /etc/resolv.conf
 ```
